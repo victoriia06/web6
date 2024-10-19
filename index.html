@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <title> Задание 3 WEB </title>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="./style.css" />
+
+</head>
+
+<body>
+    <div id="main-aside-wrapper">
+        <main>
+            <div style="background-color:#ccc; margin:0 auto; width:960; padding: 10px; height:145px;">
+                <img style="float:left; margin:10px; width:150px; height:125px;" src="logo.png" />
+                <h1 style="text-align:center;">Кубанский государственный университет</h1>
+            </div>
+        </main>
+        <aside>
+            <nav class="menu">
+
+                <ul>
+                    <li><a href="http://kubsu.ru">Главная</a></li>
+                    <li><a href="http://kubsu.ru">Наш сайт</a></li>
+                    <li><a href="http://kubsu.ru">О нас</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+    </div>
+
+    <div style="text-align: center; width:960px; background-color:#ccc; margin: 0 auto; margin-top:20px; padding:10px;">
+
+        <h2> Выполнение задания 3 по Web </h2>
+    </div>
+
+    <div style="width:960px; background-color:#ccc; margin: 0 auto; margin-top:20px; padding:10px;">
+
+        <ol>
+            <li><a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+
+            <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+
+            <li><a href="https://kubsu.ru/"><img src="kubsu.jpg" alt="КубГУ" style="width: 600px;"></a></li>
+
+            <li><a href="http://kubsu.ru">Сокращенная ссылка на внутреннюю страницу</a></li>
+
+            <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+
+            <li><a href="#reg">Ссылка на фрагмент текущей страницы</a></li>
+
+            <li>Одно из ведущих высших учебных заведений, расположенное в Краснодаре - <a href="https://kubsu.ru/">КубГУ</a>!</li>
+
+            <li><a href="https://www.kubsu.ru/ru/university/library">Ссылка с тремя параметрами</a></li>
+
+            <li><a href="index.html#reg">Ссылка с параметром id</a></li>
+
+            <li><a href="index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+
+            <li section id="about"><a href="http://kubsu.ru#sveden">Относительная ссылка на страницу в каталоге about</a></li>
+
+            <li><a href="https://kubsu.ru/education">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+
+            <li><a href="https://kubsu.ru/education/programs">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+
+            <li><a href="https://kubsu.ru/ru/timetable/#main-content">Ссылка на фрагмент страницы стороннего сайта</a></li>
+
+            <li>
+                <map name="clickable">
+                    <area shape="rect" coords="0,0,100,100" href="https://kubsu.ru/" alt="Ссылка 1">
+                    <area shape="circle" coords="200,200,50" href="https://kubsu.ru/" alt="Ссылка 2">
+                    <img usemap="#clickable" src="image.jpg" alt="picture" width="500px" height="300px">
+                </map>
+            </li>
+
+            <li><a href="">Пустой href</a></li>
+
+            <li><a onclick="alert('Ссылка без href'); return false;">Без href</a></li>
+
+            <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+
+            <li><a href="https://kubsu.ru/" rel="noopener noreferrer">Запрещенная для индексации поисковиками</a></li>
+
+        </ol>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <td colspan="4" style="text-align: center; background-color: #b7b7b7; color: black;">Список ссылок</td>
+            </tr>
+            <tr>
+                <th>№</th>
+                <th>Наименование</th>
+                <th>Вид</th>
+                <th>Ссылка</th>
+            </tr>
+            <tr>
+                <td class="colored-cell">1</td>
+                <td class="color-link">Этот сайт</td>
+                <td>
+                    <a href="index.html">index.html</a>
+                </td>
+                <td>
+                    <a href="index.html">Ссылка</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="colored-cell">2</td>
+                <td>Регистрация</td>
+                <td>
+                    <a href="index.html#reg">index.html#reg</a>
+                </td>
+                <td>
+                    <a href="index.html#reg">Ссылка</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="colored-cell">3</td>
+                <td>Главный сайт КубГУ</td>
+                <td>
+                    <a href="https://kubsu.ru">https://kubsu.ru</a>
+                </td>
+                <td>
+                    <a href="https://kubsu.ru">Ссылка</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="colored-cell">4</td>
+                <td>Об КубГУ</td>
+                <td>
+                    <a href="http://kubsu.ru#sveden">http://kubsu.ru#sveden</a>
+                </td>
+                <td>
+                    <a href="http://kubsu.ru#sveden">Ссылка</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="reg">
+        <a id="reg"
+
+        <h2 section id="reg"> Регистрация </h2>
+
+        <form action="/index.php"
+              method="POST">
+            <p>
+                <label>
+                    ФИО:<br>
+                    <input name="field-name-1"
+                           placeholder="Иванов Иван Иванович">
+                </label><br>
+            </p>
+            <label>
+                Номер телефона:<br>
+                <input name="field-tel"
+                       type="tel"
+                       placeholder="Введите ваш номер">
+            </label><br>
+
+            <label>
+                Email:<br>
+                <input name="field-email"
+                       type="email"
+                       placeholder="Введите вашу почту">
+            </label><br>
+
+            <label>
+                Дата рождения:<br />
+                <input name="field-date"
+                       type="date">
+            </label><br>
+
+            Пол:<br>
+            <label>
+                <input type="radio"
+                       name="radio-group-1" value="Значение1">
+                Мужской
+            </label>
+            <label>
+                <input type="radio"
+                       name="radio-group-1" value="Значение2">
+                Женский
+            </label><br>
+
+            <p>
+                <label>
+                    Любимый язык программирования:
+                    <br>
+                    <select name="field-name-4[]"
+                            multiple="multiple">
+                        <option value="Значение1">Pascal</option>
+                        <option value="Значение2">C</option>
+                        <option value="Значение3">C++</option>
+                        <option value="Значение4">JavaScript</option>
+                        <option value="Значение5">PHP</option>
+                        <option value="Значение6">Haskel</option>
+                        <option value="Значение7">Clojure</option>
+                        <option value="Значение8">Prolog</option>
+                        <option value="Значение9">Scala</option>
+                    </select>
+                </label><br>
+            </p>
+
+            <label>
+                Биография:
+                <br>
+                <textarea name="field-name-2"
+                          placeholder="Расскажите о себе"></textarea>
+            </label><br>
+
+            <br>
+            <label>
+                <input type="checkbox"
+                       name="check-1">
+                С контрактом ознакомлен (а)
+            </label><br>
+
+            <input type="submit" value="Сохранить">
+
+        </form>
+        </div>/
+
+        <div style="width:960px; background-color:#ccc; margin: 0 auto; margin-top:10px; padding:10px;">
+            <footer style="float">(c) Виктория Кваша</footer>
+            </div>
+
+</body>
+
+</html>
