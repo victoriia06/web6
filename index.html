@@ -41,9 +41,10 @@
                 <div id="optionsContainer" class="hidden">
                     <label for="options">Опция:</label>
                     <select id="options" class="form-control mb-2">
-                        <option value="option1">Опция 1 (10 руб.)</option>
-                        <option value="option2">Опция 2 (20 руб.)</option>
-                        <option value="option3">Опция 3 (30 руб)</option>
+                        <option value="option1">Нет опций</option>
+                        <option value="option2">Опция 1 (10 руб.)</option>
+                        <option value="option3">Опция 2 (20 руб.)</option>
+                        <option value="option4">Опция 3 (30 руб)</option>
                     </select>
                 </div>
 
@@ -86,9 +87,10 @@
 
             if (selectedType === 'type2') {
                 const selectedOption = optionsSelect.value;
-                if (selectedOption === 'option1') totalPrice += 10; 
-                if (selectedOption === 'option2') totalPrice += 20; 
-                if (selectedOption === 'option3') totalPrice += 30; 
+                if (selectedOption === 'option1') totalPrice += 0; 
+                if (selectedOption === 'option2') totalPrice += 10; 
+                if (selectedOption === 'option3') totalPrice += 20; 
+                if (selectedOption === 'option4') totalPrice += 30; 
             } else if (selectedType === 'type3' && propertyCheckbox.checked) {
                 totalPrice += 50; 
             }
