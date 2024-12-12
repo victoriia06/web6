@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
-    <title>Калькулятор товара и услуг</title>
+    <title>Калькулятор стоимости услуг</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -86,9 +86,9 @@
 
             if (selectedType === 'type2') {
                 const selectedOption = optionsSelect.value;
-                if (selectedOption === 'option1') totalPrice += 10; // стоимость опции 1
-                if (selectedOption === 'option2') totalPrice += 20; // стоимость опции 2
-                if (selectedOption === 'option3') totalPrice += 30; // стоимость опции 3
+                if (selectedOption === 'option1') totalPrice += 10; 
+                if (selectedOption === 'option2') totalPrice += 20; 
+                if (selectedOption === 'option3') totalPrice += 30; 
             } else if (selectedType === 'type3' && propertyCheckbox.checked) {
                 totalPrice += 50; 
             }
