@@ -17,7 +17,7 @@
 
     <div class="container mt-5">
         <div class="text-center">
-            <h1>Калькулятор товара и услуг</h1>
+            <h1>Калькулятор стоимости услуг</h1>
         </div>
 
         <div class="calculator-container mb-5">
@@ -72,14 +72,14 @@
         const totalPriceDisplay = document.getElementById('totalPrice');
 
         let prices = {
-            type1: 100, // цена за единицу для типа 1
-            type2: 200, // цена за единицу для типа 2
-            type3: 300  // цена за единицу для типа 3
+            type1: 100, 
+            type2: 200, 
+            type3: 300  
         };
 
         function updatePrice() {
             let totalPrice = 0;
-            const quantity = Math.max(parseInt(quantityInput.value) || 0, 0); // установка значения по умолчанию 0
+            const quantity = Math.max(parseInt(quantityInput.value) || 0, 0); 
 
             const selectedType = document.querySelector('input[name="serviceType"]:checked').value;
             totalPrice = prices[selectedType] * quantity;
@@ -90,40 +90,37 @@
                 if (selectedOption === 'option2') totalPrice += 20; // стоимость опции 2
                 if (selectedOption === 'option3') totalPrice += 30; // стоимость опции 3
             } else if (selectedType === 'type3' && propertyCheckbox.checked) {
-                totalPrice += 50; // стоимость свойства
+                totalPrice += 50; 
             }
 
-            totalPriceDisplay.textContent = totalPrice.toFixed(2); // форматируем вывод цены
+            totalPriceDisplay.textContent = totalPrice.toFixed(2); 
         }
 
         function updateForm() {
             const selectedType = document.querySelector('input[name="serviceType"]:checked').value;
 
-            // Скрываем контейнеры по умолчанию
             optionsContainer.classList.add('hidden');
             propertiesContainer.classList.add('hidden');
 
-            // Динамическое отображение элементов в зависимости от типа товара
             if (selectedType === 'type1') {
-                // Товар 1: нет опций и свойств
+     
                 optionsContainer.classList.add('hidden');
                 propertiesContainer.classList.add('hidden');
             } else if (selectedType === 'type2') {
-                // Товар 2: показываем опции
+     
                 optionsContainer.classList.remove('hidden');
                 propertiesContainer.classList.add('hidden');
             } else if (selectedType === 'type3') {
-                // Товар 3: показываем свойства
+  
                 optionsContainer.classList.add('hidden');
                 propertiesContainer.classList.remove('hidden');
             }
 
-            updatePrice(); // обновляем цену при смене типа товара
+            updatePrice(); 
         }
 
-        // Слушатели событий
         quantityInput.addEventListener('input', (e) => {
-            e.target.value = Math.max(0, parseInt(e.target.value)) || 0; // Убедитесь, что значение не отрицательное
+            e.target.value = Math.max(0, parseInt(e.target.value)) || 0; 
             updatePrice();
         });
 
@@ -133,8 +130,7 @@
         optionsSelect.addEventListener('change', updatePrice);
         propertyCheckbox.addEventListener('change', updatePrice);
 
-        // Инициализация формы
-        updateForm(); // Убедитесь, что форма инициализируется правильно
+        updateForm(); 
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
